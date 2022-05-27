@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div id="output">
+
+</div>
+<script type="text/javascript">
+    let output = document.getElementById('output')
+    let i = 0;
+    let timer = 0;
+    let str = 'welcome to react'
+    function typing(){
+        if(i<=str.length){
+            output.innerHTML = str.slice(0,i++) + '_'
+            timer = setTimeout(typing,200)
+        } else {
+            output.innerHTML = str
+            clearTimeout(timer)
+        }
+    }
+    typing()
+</script>
+</body>
+</html>

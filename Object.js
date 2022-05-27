@@ -25,3 +25,20 @@ Math.max(...[1,2,43,3,5])
 [1,23,32,5,43,2].reduce((x,y)=>{
   return x = x > y ? x : y
 })
+let person = {
+  'wo cao': 'wocao',
+  [2+'ab']: 5544,
+  sayHello(name = 'obj'){
+    console.log(`hello,${name}`)
+  }
+}
+console.log(person["wo cao"])
+console.log(person[2+'ab'])
+person.sayHello('hdf')
+console.log(Object.getOwnPropertyDescriptor(person,'wo cao'))
+console.log(Object.keys(person))
+console.log(Object.values(person))
+console.log(Object.entries(person))
+console.log(Reflect.ownKeys(person))
+const {sayHello} = person
+console.log(sayHello())
