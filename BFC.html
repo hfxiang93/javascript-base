@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC</title>
+<!--    BFC是块级格式化上下文
+创建BFC的方式有：
+1 html根元素
+2 float 浮动
+3 绝对定位
+4 overflow:hidden
+5 display 为table布局或者flex布局
+
+BFC的主要作用有：
+1 清除浮动
+2 防止同一BFC容器内的相邻元素的外边距发生重叠
+-->
+    <style>
+        img{
+            width: 200px;
+            float: left;
+        }
+        p{
+            overflow: hidden;
+        }
+        .parent{
+            overflow: hidden;
+        }
+        .float{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/xpz.jpg" />
+    <p>我是超长的文字</p>
+    <div class="parent">
+        <div class="float">浮动元素</div>
+    </div>
+</body>
+</html>

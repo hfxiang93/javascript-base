@@ -1,0 +1,13 @@
+img{
+    width: 200px;
+    float: left;
+}
+p{
+    overflow: hidden;
+}
+.parent{
+    overflow: hidden;
+}
+.float{
+    float: left;
+}
