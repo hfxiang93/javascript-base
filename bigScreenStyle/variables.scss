@@ -1,0 +1,68 @@
+$baseWidth: 1920 !default;
+$baseHeight: 1080 !default;
+// $baseWidth: 1920 !default;
+// $baseHeight: 1080 !default;
+
+// 页面尺寸当前是否为自适应
+// $selfAdaption: false !default;
+$selfAdaption: true !default;
+
+@function cw($px) {
+  @return ($px / $baseWidth) * 100vw;
+  // @return $px * 1px;
+}
+
+@function ch($px) {
+  @return ($px / $baseHeight)* 100vh;
+  // @return $px * 1px;
+}
+
+/* 主题色 */
+$main-bg: #00224d;
+$primary-color: #07B5FF;
+
+/* 背景色 */
+$border-color: #5cb3ff;
+$bg-hover-color: rgba($main-bg, 0.5);
+$bg-light-color: $primary-color;
+$dialog-bg: rgba($main-bg, 0.9);
+$title-icon: #1CA0FF;
+
+/* 正文 */
+$title-color: #00F7F7;
+$text-color: #fff;
+$text-light-color: $primary-color;
+$disabled-color: #999;
+$icon-color: $primary-color;
+$icon-light-color: #fff;
+/* 按钮 */
+$btn-primary-color: $primary-color;
+$btn-border-color: $primary-color;
+/* 文字按钮 */
+$text-btn-color: $primary-color;
+$text-btn-hover-color: #70D2FF;
+/* 表格 */
+$th-color: #DAEEF9;
+$td-color: #ffffff;
+$td-light-color: $primary-color;
+$th-bg-color: rgb(2, 82, 151);
+$td-bg-color: $main-bg;
+$td-border-color: rgba(61, 156, 204, 0.4);
+$table-hover-color: $main-bg;
+
+/* 表单组件 */
+$input-border-color: $primary-color;
+$input-border-hover-color: #409eff;
+$input-bg: rgba($main-bg, 0.8);
+$popper-bg: #0063BC;
+
+/* 日历 */
+$date-cell-color: #fff;
+
+
+
+:export {
+  baseWidth: $baseWidth;
+  baseHeight: $baseHeight;
+  selfAdaption: $selfAdaption;
+}
